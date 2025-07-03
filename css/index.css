@@ -1,31 +1,92 @@
 body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100dvh;
-            margin: 0;
-            background-color: black;
-            color: black;
-            font-family: monospace;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    margin: 0;
+    background-image: url(https://scontent.flim22-2.fna.fbcdn.net/v/t39.30808-6/464831971_8686741268059754_5488493001878307277_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeGLLG74t1hlU14FZeLKfh0puO9oHQ3uq-y472gdDe6r7Kt2Gy3593xxu-2JVn6Ic_uJqxc5FgIVGvf05KJ5KAeP&_nc_ohc=uJNmThTdBq8Q7kNvwGj-DfC&_nc_oc=AdnFT_yc1wGB76TCQf7fzwwae0ebda3HAM6pFz17hwe8WHnJ5-XYB_-57EGYNZLWh_M&_nc_zt=23&_nc_ht=scontent.flim22-2.fna&_nc_gid=FDDTy4xWDYWmgjIbaYLx1Q&oh=00_AfPGUYu_YZfiW4XwTZPk7ikhEoiXC6_4sPI-kEI3HAlKGQ&oe=686BD0F0);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-family: monospace;
+}
 
-        main {
-            max-width: 300px;
-            border-radius: 8px;
-            text-align: center;
-            background-color: green;
-        }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.25rem 0 rgb(102, 77, 63);
+    text-align: center;
+    background-color: rgba(155, 99, 53, 0.514);
+}
 
-        h1 {
-            color: rgb(145, 255, 0)
-        }
+h1 {}
 
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.imga {
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title1 {
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.title2 {
+    margin: 1rem;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.list {
+    margin: 1rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.parr2 {
+    margin: 0;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.badge {
+    padding: 0.25rem;
+    background-color: gray;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    color: white;
+    font-weight: bold;
+}
+
+.lin {
+    color: white;
+    font-weight: bold;
+    transition: color 0.25s;
+
+    &:hover{
+        color: rgb(255, 115, 0);
         }
+}
